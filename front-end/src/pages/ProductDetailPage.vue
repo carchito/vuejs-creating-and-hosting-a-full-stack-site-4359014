@@ -53,7 +53,7 @@ export default {
       const email = prompt('Please enter your email to sign in:');
       const auth = getAuth();
       const actionCodeSettings = {
-        url: `https://fantastic-broccoli-q77p9w6j49rxfx67p-8080.app.github.dev/products/${this.$route.params.productId}`,
+        url: `https://full-stack-vue-deployment-carchon.onrender.com/products/${this.$route.params.productId}`,
         handleCodeInApp: true,
       }
       await sendSignInLinkToEmail(auth, email, actionCodeSettings);
